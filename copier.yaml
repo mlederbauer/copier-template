@@ -1,6 +1,6 @@
 # Not worth creating validators, wait for https://github.com/copier-org/copier/pull/958
 github_org:
-  help: Your account or organization
+  help: Your account (e.g., @pschwllr) or organization (e.g., @schwallergroup)
 project_name:
   help: The name of the project (as in `pip install {project_name}`
 package_name:

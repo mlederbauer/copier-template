@@ -4,9 +4,11 @@
 
 _As simple as possible. No magic._
 
+Adapted from [copier-pylib](https://github.com/astrojuanlu/copier-pylib).
+
 ## Features
 
-- [PDM] for packaging.
+- [Hatch] for packaging.
 - [pytest] for testing.
 - [tox] for automation of test runners and other stuff.
 - [Sphinx] for documentation
@@ -21,13 +23,13 @@ _As simple as possible. No magic._
 Install `copier`:
 
 ```
-pipx install copier
+pip install copier
 ```
 
 Generate a Python package:
 
 ```
-copier copy gh:astrojuanlu/copier-pylib path/to/destination
+copier copy gh:schwallergroup/copier-pylib path/to/destination
 ```
 
 ## License
@@ -36,7 +38,7 @@ copier copy gh:astrojuanlu/copier-pylib path/to/destination
 
 [copier]: https://github.com/copier-org/copier/
 [mypy]: http://mypy.readthedocs.io/
-[PDM]: https://pdm-project.org/
+[Hatch]: https://hatch.pypa.io/
 [pytest]: https://docs.pytest.org/
 [Sphinx]: http://www.sphinx-doc.org/
 [tox]: https://tox.readthedocs.io/
