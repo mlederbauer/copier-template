@@ -1,8 +1,7 @@
 # {{ project_name }}
 
-[![Documentation Status](https://readthedocs.org/projects/{{ project_name }}/badge/?version=latest)](https://{{ project_name }}.readthedocs.io/en/latest/?badge=latest)
 [![Code style: ruff-format](https://img.shields.io/badge/code%20style-ruff_format-6340ac.svg)](https://github.com/astral-sh/ruff)
-[![PyPI](https://img.shields.io/pypi/v/{{ project_name }})](https://pypi.org/project/{{ project_name }})
+![Coverage Status](https://raw.githubusercontent.com/{{ github_org }}/{{ project_name }}/main/coverage-badge.svg)
 
 {{ short_description}}
 
@@ -11,7 +10,7 @@
 To install, run
 
 ```
-(.venv) $ pip install {{ project_name }}
+(conda_env) $ pip install -e .
 ```
 
 ## Development
@@ -19,10 +18,28 @@ To install, run
 To run style checks:
 
 ```
-(.venv) $ pip install pre-commit
-(.venv) $ pre-commit run -a
+(conda_env) $ pip install pre-commit
+(conda_env) $ pre-commit run -a
+```
+
+### Run checks, coverage, and tests
+
+```
+(conda_env) $ pip install tox
+(conda_env) $ tox
+```
+
+### Generate coverage badge
+
+Works after running `tox`
+
+```
+(conda_env) $ pip install "genbadge[coverage]"
+(conda_env) $ genbadge coverage -i coverage.xml
 ```
 
 ## Overview
 
 Add a longer description here.
+
+

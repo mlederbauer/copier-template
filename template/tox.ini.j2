@@ -24,7 +24,7 @@ basepython =
 setenv =
     PYTHONUNBUFFERED = yes
     PYTEST_EXTRA_ARGS = -s
-    coverage: PYTEST_EXTRA_ARGS = --cov
+    coverage: PYTEST_EXTRA_ARGS = --cov=src/{{ package_name }} --cov-report xml --cov-report term
 passenv =
     *
 extras =
