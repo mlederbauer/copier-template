@@ -34,6 +34,7 @@ commands =
     pytest {env:PYTEST_MARKERS:} {env:PYTEST_EXTRA_ARGS:} {posargs:-vv}
 usedevelop = true
 
+{%- if enforce_code_style %}
 [testenv:check]
 description = perform style checks
 deps =
@@ -44,6 +45,7 @@ commands =
     pre-commit install
     pre-commit run --all-files --show-diff-on-failure
     python -m build
+{%- endif %}
 
 [testenv:docs]
 description = build HTML docs

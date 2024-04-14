@@ -12,6 +12,13 @@ author_name:
   help: Your name
 author_email:
   help: Your email
+enforce_code_style:
+    help: Would you like to enforce code style?
+    type: bool
+    default: strict (precommit, ruff, mypy)
+    choices:
+        strict (precommit, ruff, mypy): true
+        simple (mypy): false
 
 _subdirectory: template
 _templates_suffix: .j2

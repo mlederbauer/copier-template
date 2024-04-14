@@ -7,13 +7,30 @@
 
 ## Installation
 
+Create a new environment, you may also give the environment a different name. 
+
+```
+conda create -n {{ package_name }} python=3.10 
+```
+
+```
+conda activate {{ package_name }}
+```
+
+If you need jupyter lab, install it 
+
+```
+(conda_env) $ pip install jupyterlab
+```
+
+
+## Development
+
 To install, run
 
 ```
-(conda_env) $ pip install -e .
+(conda_env) $ pip install -e ".[test,doc]
 ```
-
-## Development
 
 To run style checks:
 
