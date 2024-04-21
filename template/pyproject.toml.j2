@@ -40,6 +40,7 @@ test = [
     "pytest",
     "pytest-cov",
     "tox",
+    "genbadge[coverage]",
 ]
 doc = [
     "furo",
@@ -49,9 +50,10 @@ doc = [
 ]
 
 [tool.hatch.version]
-path = "src/{{ project_name }}/__about__.py"
+path = "src/{{ package_name }}/__about__.py"
 
 {%- if enforce_code_style %}
+
 [tool.ruff]
 show-fixes = true
 
@@ -71,6 +73,8 @@ select = [
 
 [tool.ruff.lint.pydocstyle]
 convention = "numpy"
+
+{%- endif %}
 
 [tool.mypy]
 python_version = "3.10"
@@ -92,12 +96,11 @@ warn_unused_ignores = true
 warn_return_any = true
 no_implicit_reexport = true
 
-{%- endif %}
-
 # More strict checks for library code
 [[tool.mypy.overrides]]
 module = "{{ package_name }}"
 disallow_untyped_defs = true
+disable_error_code = import-untyped
 
 # Ignore certain missing imports
 # [[tool.mypy.overrides]]
