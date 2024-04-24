@@ -1,4 +1,4 @@
-# copier-pylib
+# copier-liac
 
 [Copier](https://github.com/copier-org/copier) template for pure Python libraries.
 
@@ -13,7 +13,6 @@ Adapted from [copier-pylib](https://github.com/astrojuanlu/copier-pylib).
 - [tox] for automation of test runners and other stuff.
 - [Sphinx] for documentation
 - [GitHub Actions] for continuous integration and publishing to PyPI.
-- [Read the Docs] for continuous documentation.
 - [mypy] for type checks.
 - [ruff] for style checks and automatic Python code formatting.
 - [pre-commit] for optional automation of style checks.
@@ -45,4 +44,3 @@ copier copy gh:schwallergroup/copier-liac path/to/destination
 [ruff]: https://docs.astral.sh/ruff/
 [pre-commit]: https://github.com/pre-commit/pre-commit/
 [GitHub Actions]: https://github.com/features/actions/
-[Read the Docs]: https://readthedocs.org/
