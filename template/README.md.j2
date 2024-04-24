@@ -1,11 +1,26 @@
-# {{ project_name }}
+<picture>
+  <source srcset="./assets/banner.png" width='100%'>
+  <img alt="Project logo" src="/assets/" width="100%">
+</picture>
 
 [![Code style: ruff-format](https://img.shields.io/badge/code%20style-ruff_format-6340ac.svg)](https://github.com/astral-sh/ruff)
 ![Coverage Status](https://raw.githubusercontent.com/{{ github_org }}/{{ project_name }}/main/coverage-badge.svg)
 
+<h1 align="center">
+# {{ project_name }}
+</h1>
+
+<br>
+
+
 {{ short_description}}
 
-## Installation
+## 🔥 Usage
+
+> TODO show in a very small amount of space the **MOST** useful thing your package can do.
+> Make it as short as possible! You have an entire set of docs for later.
+
+## 👩‍💻 Installation
 
 Create a new environment, you may also give the environment a different name. 
 
@@ -24,7 +39,7 @@ If you need jupyter lab, install it
 ```
 
 
-## Development
+## 🛠️ Development installation
 
 To install, run
 
@@ -39,7 +54,7 @@ To run style checks:
 (conda_env) $ pre-commit run -a
 ```
 
-### Run checks, coverage, and tests
+### Run style checks, coverage, and tests
 
 ```
 (conda_env) $ pip install tox
@@ -54,9 +69,5 @@ Works after running `tox`
 (conda_env) $ pip install "genbadge[coverage]"
 (conda_env) $ genbadge coverage -i coverage.xml
 ```
-
-## Overview
-
-Add a longer description here.
 
 
