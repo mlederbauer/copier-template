@@ -29,7 +29,7 @@ pip install copier
 Generate a Python package:
 
 ```
-copier copy gh:schwallergroup/copier-pylib path/to/destination
+copier copy gh:schwallergroup/copier-liac path/to/destination
 ```
 
 ## License
