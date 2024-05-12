@@ -1,6 +1,6 @@
-# copier-liac
+# copier-template
 
-[Copier](https://github.com/copier-org/copier) template for pure Python libraries.
+[Copier](https://github.com/copier-org/copier) template for pure Python libraries. Adapted from the copier template by the [LIAC](https://github.com/schwallergroup/copier-liac).
 
 _As simple as possible. No magic._
 
@@ -28,7 +28,7 @@ pip install copier
 Generate a Python package:
 
 ```
-copier copy gh:schwallergroup/copier-liac path/to/destination
+copier copy gh:mlederbauer/copier-template path/to/destination
 ```
 
 ## License
