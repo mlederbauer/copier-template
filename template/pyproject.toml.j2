@@ -33,6 +33,9 @@ source = "https://github.com/{{ github_org }}/{{ project_name }}"
 tracker = "https://github.com/{{ github_org }}/{{ project_name }}/issues"
 # documentation = "https://{{ project_name }}.readthedocs.io"
 
+[project.scripts]
+{{ package_name }} = "{{ package_name }}.cli:main"
+
 [project.optional-dependencies]
 test = [
     "mypy",
@@ -56,6 +59,7 @@ path = "src/{{ package_name }}/__about__.py"
 
 [tool.ruff]
 show-fixes = true
+line-length = 79
 
 [tool.ruff.lint]
 select = [
