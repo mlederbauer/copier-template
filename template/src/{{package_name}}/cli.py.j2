@@ -1,7 +1,7 @@
 import argparse
 from {{ package_name }}.example_module import hello_smiles
 
-def main():
+def main() -> None:
     parser = argparse.ArgumentParser(description='Process some smiles.')
     parser.add_argument('smiles', type=str, help='A text string representing a SMILES notation or any string.')
 
