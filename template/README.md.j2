@@ -41,21 +41,21 @@ If you need jupyter lab, install it
 To install, run
 
 ```
-(conda_env) $ pip install -e ".[test,doc]"
+({{ package_name }}) $ pip install -e ".[test,doc]"
 ```
 
 To run style checks:
 
 ```
-(conda_env) $ pip install pre-commit
-(conda_env) $ pre-commit run -a
+({{ package_name }}) $ pip install pre-commit
+({{ package_name }}) $ pre-commit run -a
 ```
 
 ### Run style checks, coverage, and tests
 
 ```
-(conda_env) $ pip install tox
-(conda_env) $ tox
+({{ package_name }}) $ pip install tox
+({{ package_name }}) $ tox
 ```
 
 ### Generate coverage badge
@@ -63,8 +63,8 @@ To run style checks:
 Works after running `tox`
 
 ```
-(conda_env) $ pip install "genbadge[coverage]"
-(conda_env) $ genbadge coverage -i coverage.xml
+({{ package_name }}) $ pip install "genbadge[coverage]"
+({{ package_name }}) $ genbadge coverage -i coverage.xml
 ```
 
 
