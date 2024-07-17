@@ -46,6 +46,20 @@ To install, run
 ({{ package_name }}) $ pip install -e ".[test,doc]"
 ```
 
+When adding new packages to the file, add them to the `pyproject.toml` file:
+
+```
+# pyproject.toml
+...
+[project]
+name = "{{ project_name }}"
+...
+dependencies = [
+    "foo-package==1.0.1",
+    "foo-package-from-repo @ git+https://github.com/foo-username/foo-package-from-repo.git@main"
+]
+```
+
 To run style checks:
 
 ```
