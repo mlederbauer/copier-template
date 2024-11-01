@@ -1,5 +1,5 @@
 github_org:
-  help: Your account (e.g., @pschwllr) or organization (e.g., @schwallergroup)
+  help: Your account (e.g., @mlederbauer) or organization (e.g., @schwallergroup)
 project_name:
   help: The name of the project (as in `pip install {project_name}`
 package_name:

@@ -25,10 +25,19 @@ Install `copier`:
 pip install copier
 ```
 
-Generate a Python package:
+Generate a Python package (make sure to create the directory of the project first):
 
 ```
 copier copy gh:mlederbauer/copier-template path/to/destination
+```
+
+Create a new repository on github and run
+
+```
+git init
+git remote add origin git@github.com:mlederbauer/PROJECTNAME.git
+git branch -M main
+git push -u origin main
 ```
 
 ## License
