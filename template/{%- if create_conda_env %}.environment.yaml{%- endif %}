@@ -1,6 +1,6 @@
-name: {project_name}
+name: {{ project_name }}
 channels:
   - conda-forge
 dependencies:
-  - python=3.10
+  - python={{ python_version }}
   - pip
