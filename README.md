@@ -37,6 +37,8 @@ Create a new repository on github and run
 git init
 git remote add origin git@github.com:USERNAME/PROJECTNAME.git
 git branch -M main
+git add .
+git commit -m "Initial commit"
 git push -u origin main
 ```
 
