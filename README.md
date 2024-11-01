@@ -35,7 +35,7 @@ Create a new repository on github and run
 
 ```
 git init
-git remote add origin git@github.com:mlederbauer/PROJECTNAME.git
+git remote add origin git@github.com:USERNAME/PROJECTNAME.git
 git branch -M main
 git push -u origin main
 ```
