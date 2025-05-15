@@ -18,6 +18,21 @@ enforce_code_style:
     choices:
         strict (precommit, ruff, mypy): true
         simple (mypy): false
+create_conda_env:
+    help: Do you want to create a conda environment? (environment.yaml with {project_name})
+    type: bool
+    default: No
+python_version:
+    help: Which Python version would you like to use?
+    type: str
+    default: "3.10"
+    choices:
+        - "3.8"
+        - "3.9"
+        - "3.10"
+        - "3.11"
+        - "3.12"
+    when: "{{ create_conda_env }}"
 
 _subdirectory: template
 _templates_suffix: .j2
